@@ -1,3 +1,23 @@
 {
-  "parser": "@typescript-eslint/parser"
+  "root": true,
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "testing-library"],
+  "rules": {
+    "@typescript-eslint/consistent-type-imports": "warn"
+  },
+  "overrides": [
+    // Only uses Testing Library lint rules in test files
+    {
+      "files": [
+        "jest.setup.js",
+        "**/__tests__/**/*.[jt]s?(x)",
+        "**/?(*.)+(spec|test).[jt]s?(x)"
+      ],
+      "extends": ["plugin:testing-library/react"],
+      "env": {
+        "jest": true
+      }
+    }
+  ]
 }
