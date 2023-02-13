@@ -6,6 +6,11 @@ import { launchCardPropsFromApiDoc } from '@/schemas/adapters/launch-card-props-
 
 const cards = (mockData.docs ?? []).map(launchCardPropsFromApiDoc);
 
+/**
+ * @fixme - this test is of questionable value now that we have
+ * an E2E Playwright test
+ */
+
 describe('Home', () => {
   it('renders the cards with mock-data', () => {
     render(<Home cards={cards} />);
