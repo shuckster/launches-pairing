@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LaunchCard /> renders a card with failed launch data 1`] = `
+<DocumentFragment>
+  <figure
+    class="launch-card day p-6 max-w-sm md:m-auto bg-slate-50 dark:bg-slate-600 rounded-lg text-black dark:text-white shadow-lg flex flex-col space-y-4 md:flex-row md:space-x-4"
+  >
+    <div
+      class="shrink-0 self-center"
+    >
+      <img
+        alt="Insignia for FalconSat"
+        data-nimg="1"
+        decoding="async"
+        height="125"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fimages2.imgbox.com%2F94%2Ff2%2FNN6Ph45r_o.png&w=256&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fimages2.imgbox.com%2F94%2Ff2%2FNN6Ph45r_o.png&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages2.imgbox.com%2F94%2Ff2%2FNN6Ph45r_o.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="125"
+      />
+    </div>
+    <div
+      class="text-gray-500 dark:text-gray-400"
+    >
+      <h3
+        class="text-gray-700 dark:text-gray-100 text-xl font-semibold"
+      >
+        FalconSat
+      </h3>
+      <dl
+        class="mt-1 mb-2"
+      >
+        <dt
+          class="text-xs"
+        >
+          Core serial:
+        </dt>
+        <dd
+          class="text-gray-700 dark:text-gray-200"
+        >
+          Merlin1A
+        </dd>
+      </dl>
+      <dl
+        class="mt-1 mb-2"
+      >
+        <dt
+          class="text-xs"
+        >
+          Payload type:
+        </dt>
+        <dd
+          class="text-gray-700 dark:text-gray-200"
+        >
+          Satellite
+        </dd>
+      </dl>
+      <div
+        class="rounded-t-lg bg-red-100 dark:bg-opacity-20 dark:bg-red-900 dark:text-orange-200 py-2 px-3 mt-2 inline-block text-sm"
+      >
+        <strong
+          class="dark:text-white"
+        >
+          Failure:
+        </strong>
+         merlin engine failure
+      </div>
+      <div
+        class="rounded-b-lg bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-white px-3 py-2 border-t-2 text-sm border-red-500"
+      >
+        <span
+          class="whitespace-nowrap"
+        >
+          24 March 2006
+        </span>
+         
+        <span
+          class="whitespace-nowrap"
+        >
+          - 22:30:00 GMT
+        </span>
+      </div>
+    </div>
+  </figure>
+</DocumentFragment>
+`;
+
+exports[`<LaunchCard /> renders a card with successful launch data 1`] = `
+<DocumentFragment>
+  <figure
+    class="launch-card day p-6 max-w-sm md:m-auto bg-slate-50 dark:bg-slate-600 rounded-lg text-black dark:text-white shadow-lg flex flex-col space-y-4 md:flex-row md:space-x-4"
+  >
+    <div
+      class="shrink-0 self-center"
+    >
+      <img
+        alt="Insignia for RatSat"
+        data-nimg="1"
+        decoding="async"
+        height="125"
+        loading="lazy"
+        src="/_next/image?url=https%3A%2F%2Fimages2.imgbox.com%2F95%2F39%2FsRqN7rsv_o.png&w=256&q=75"
+        srcset="/_next/image?url=https%3A%2F%2Fimages2.imgbox.com%2F95%2F39%2FsRqN7rsv_o.png&w=128&q=75 1x, /_next/image?url=https%3A%2F%2Fimages2.imgbox.com%2F95%2F39%2FsRqN7rsv_o.png&w=256&q=75 2x"
+        style="color: transparent;"
+        width="125"
+      />
+    </div>
+    <div
+      class="text-gray-500 dark:text-gray-400"
+    >
+      <h3
+        class="text-gray-700 dark:text-gray-100 text-xl font-semibold"
+      >
+        RatSat
+      </h3>
+      <dl
+        class="mt-1 mb-2"
+      >
+        <dt
+          class="text-xs"
+        >
+          Core serial:
+        </dt>
+        <dd
+          class="text-gray-700 dark:text-gray-200"
+        >
+          Merlin2C
+        </dd>
+      </dl>
+      <dl
+        class="mt-1 mb-2"
+      >
+        <dt
+          class="text-xs"
+        >
+          Payload type:
+        </dt>
+        <dd
+          class="text-gray-700 dark:text-gray-200"
+        >
+          Satellite
+        </dd>
+      </dl>
+      <div
+        class="rounded-t-lg text-lime-700 bg-lime-200 dark:bg-lime-900 dark:text-lime-100 py-1 px-3 mt-2 inline-block font-bold"
+      >
+        Success
+      </div>
+      <div
+        class="rounded-b-lg bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-white px-3 py-2 border-t-2 text-sm border-lime-700"
+      >
+        <span
+          class="whitespace-nowrap"
+        >
+          29 September 2008
+        </span>
+         
+        <span
+          class="whitespace-nowrap"
+        >
+          - 00:15:00 BST
+        </span>
+      </div>
+    </div>
+  </figure>
+</DocumentFragment>
+`;
+
+exports[`<LaunchCard /> renders nothing if we do not have at least a name 1`] = `<DocumentFragment />`;
